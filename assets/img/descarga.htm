@@ -1,0 +1,675 @@
+<!doctype html>
+
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Los diagramas de barras te ayudan a mostrar de forma organizada un conjunto de datos, aprende cómo construirlos."/>
+
+  <title>Estadística básica: ¿Qué es un gráfico de barras?</title>
+
+  <meta property="og:title" content="Estadística básica: ¿Qué es un gráfico de barras?"/>
+  <meta property="og:description" content="Los diagramas de barras te ayudan a mostrar de forma organizada un conjunto de datos, aprende cómo construirlos."/>
+  <meta property="og:type" content="gcfglobal.lesson" />
+  <meta property="og:image" content="https://media.gcflearnfree.org/global/layout/social/gcf-website-image.png"/>
+  <meta property="og:site_name" content="GCFGlobal.org"/>
+  <meta property="fb:admins" content="100002095670400"/>
+  <meta property="fb:page_id" content="198172680436"/>
+
+  <meta name="twitter:card" content="summary"/>
+  <meta name="twitter:site" content="GCFGlobal.org"/>
+  <meta name="twitter:title" content="Estadística básica: ¿Qué es un gráfico de barras?"/>
+  <meta name="twitter:description" content="Los diagramas de barras te ayudan a mostrar de forma organizada un conjunto de datos, aprende cómo construirlos."/>
+  <meta name="twitter:url" content="https://edu.gcfglobal.org/es/estadistica-basica/que-es-un-grafico-de-barras/1/"/>
+
+  <link  rel="preconnect" as="font" href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700|Kalam:400|Montserrat:100,200,300,500|Overpass:100,300,400,600,700,900?display=swap' type='text/css'>
+  <link rel="stylesheet" href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700|Kalam:400|Montserrat:100,200,300,500|Overpass:100,300,400,600,700,900?display=swap' type='text/css'>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  <!--start css-->
+  <link rel="stylesheet" type="text/css" href="../../styles/global/site.css">
+  <link rel="stylesheet" type="text/css" href="../../styles/global/header.css">
+  <link rel="stylesheet" type="text/css" href="../../styles/global/lesson.css">
+
+  <link rel="stylesheet" type="text/css" href="../../styles/es/styles.css">
+  <link rel="stylesheet" type="text/css" href="../../styles/en/ict.css">
+  <link rel="stylesheet" type="text/css" href="../../scripts/global/audio/audio-controls.css">
+  <link rel="stylesheet" type="text/css" href="../../styles/global/rtl.css">
+  <link rel="stylesheet" type="text/css" href="../../styles/en/slides.css">
+  <link rel="stylesheet" type="text/css" href="../../styles/en/labeledgraphic.css">
+  <link rel="stylesheet" type="text/css" href="../../styles/en/lesson-resources.css">
+  <link rel="stylesheet" type="text/css" href="../../styles/en/math.css">
+  <link rel="stylesheet" type="text/css" href="../../styles/en/mathactivity-2016.css">
+  <!--end css-->
+
+  <!-- Google Tag Manager -->
+  <script type="5147dbadf6b3c82475838626-text/javascript">(function (w, d, s, l, i) {
+      w[l] = w[l] || []; w[l].push({
+        'gtm.start':
+          new Date().getTime(), event: 'gtm.js'
+      }); var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+          'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-52HRH7V');</script>
+  <!-- End Google Tag Manager -->
+
+  <script defer src="/scripts/deployment-global/lessonPage.concat.js" type="5147dbadf6b3c82475838626-text/javascript"></script>
+
+  
+    <link href="https://edu.gcfglobal.org/es/estadistica-basica/que-es-un-grafico-de-barras/1/" rel="canonical"/>
+  
+
+  
+    <link rel="manifest" href="/manifest.json" />
+  <script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async="" type="5147dbadf6b3c82475838626-text/javascript"></script>
+  
+  <script type="5147dbadf6b3c82475838626-text/javascript">
+      var OneSignal = window.OneSignal || [];
+      OneSignal.push(function () {
+          OneSignal.init({
+              appId: '423d4116-59bc-4eb4-9da2-74f755f06c80'
+          });
+      });
+    // Check subscription and add tag
+    OneSignal.push(function () {
+        OneSignal.on('subscriptionChange', function (isSubscribed) {
+            console.log("The user's subscription state is now:", isSubscribed);
+            if (isSubscribed == true) {
+                OneSignal.sendTags({
+                    course: 'estadistica-basica'
+                }).then(function (tagsSent) {
+                    console.log("tagsSent: " + JSON.stringify(tagsSent));
+                });
+            }
+        });
+    });
+  </script>
+  <!-- MailerLite Universal -->
+  <script type="5147dbadf6b3c82475838626-text/javascript">
+    (function(m,a,i,l,e,r){ m['MailerLiteObject']=e;function f(){
+    var c={ a:arguments,q:[]};var r=this.push(c);return "number"!=typeof r?r:f.bind(c.q);}
+    f.q=f.q||[];m[e]=m[e]||f.bind(f.q);m[e].q=m[e].q||f.q;r=a.createElement(i);
+    var _=a.getElementsByTagName(i)[0];r.async=1;r.src=l+'?v'+(~~(new Date().getTime()/1000000));
+    _.parentNode.insertBefore(r,_);})(window, document, 'script', 'https://static.mailerlite.com/js/universal.js', 'ml');
+
+    var ml_account = ml('accounts', '1545190', 'u3b1c1l2d0', 'load');
+  </script>
+  <!-- End MailerLite Universal -->
+
+  <!-- Global site tag (gtag.js) - Google Ads: 1060708011 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-1060708011" type="5147dbadf6b3c82475838626-text/javascript"></script>
+  <script type="5147dbadf6b3c82475838626-text/javascript">
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'AW-1060708011');
+  </script>
+  
+
+  <!-- Structured data -->
+  <script type="application/ld+json">
+    {"@context":"https://schema.org","@type":"ItemList","itemListElement":[{"@type":"ListItem","position":5,"item":{"@type":"Course","url":"https://edu.gcfglobal.org/es/estadistica-basica/que-es-un-grafico-de-barras/1/","name":"¿Qué es un gráfico de barras?","description":"Los diagramas de barras te ayudan a mostrar de forma organizada un conjunto de datos, aprende cómo construirlos.","provider":{"@type":"Organization","name":"GCFGlobal Learning","sameAs":"https://edu.gcfglobal.org"}}}],"keywords":"Diagrama de barras, gráfico de barras, estadística, gráficos estadísticos, qué es un gráfico de barras, cómo crear un diagrama de barras, cómo construir un diagrama de barras."}
+  </script>
+</head>
+<body>
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-52HRH7V" height="0" width="0"
+      style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+
+<div class="header-wrapper">
+	<header>
+	    <div id="page-header" class="desktop-header">
+	    	<div class="primary-header">
+				<div id="subjects-search">
+					<div id="subjects-search-box">
+
+						<div class="topnav-sls-container">
+							
+								<a class="envivo-butt livebutt" target="_blank" href="#"><img src="https://media.gcflearnfree.org/assets/edu-gcfglobal-site/images/envivo.svg"></a>
+							
+							<a aria-label="GCFGlobal homepage" class="logo-link home-header-logo" href="/es/">
+								<img class="logo logo-left main-logo-es" width="223px" height="60px" src="https://media.gcflearnfree.org/global/gcfglobal-color.png" alt="GCFGlobal Logo">
+							</a>
+							<form id="smallSearchbar" action="/es/search/" onSubmit="if (!window.__cfRLUnblockHandlers) return false; showSearchSpinner()" data-cf-modified-5147dbadf6b3c82475838626-="">
+								<span class="form-content-container">
+									<input class="topnav-search-field-small home-search-input" pattern=".{1,}" required type="text" name="q" placeholder="¿Qué quieres aprender?" title="Search bar">
+
+									<button class="search-submit-btn-small search-close-btn" type="button" aria-label="close search bar">
+										<i onClick="if (!window.__cfRLUnblockHandlers) return false; showSearchBar('close')" class="material-icons close-search-x" data-cf-modified-5147dbadf6b3c82475838626-="">close</i>
+									</button>
+									<button class="search-submit-btn-small" type="submit" aria-label="search button">
+										<i onClick="if (!window.__cfRLUnblockHandlers) return false; showSearchBar('close')" class="material-icons" data-cf-modified-5147dbadf6b3c82475838626-="">search</i>
+									</button>
+									<img class="search-submit-spinner left-spinner" src="https://media.gcflearnfree.org/assets/edu-gcfglobal-site/images/transparent-loading-spinner.gif" alt="">
+								</span>
+							</form>
+						</div>
+
+					</div>
+					<div class="topnav-rightbox">
+
+						<!-- Search -->
+						<button onClick="if (!window.__cfRLUnblockHandlers) return false; showSearchBar('open')" class="header-btn header-search-btn home-search-button" aria-label="open search bar" data-cf-modified-5147dbadf6b3c82475838626-="">
+							<i class="material-icons">search</i>
+						</button>
+
+						<!-- Menu trigger -->
+						
+                            <button class="subjects-select home-header-topics-button" onclick="if (!window.__cfRLUnblockHandlers) return false; toggleSubjectsDropdown()" data-cf-modified-5147dbadf6b3c82475838626-="">
+                                <i class="dropdown-hamburger material-icons">menu</i>
+                                <p>Menú</p>
+                            </button>
+                        
+
+						
+                            <div class="dropdown-wrapper">
+                                <button class="dropdown-close-x" onclick="if (!window.__cfRLUnblockHandlers) return false; toggleSubjectsDropdown()" data-cf-modified-5147dbadf6b3c82475838626-="">
+                                    <i class="material-icons">close</i>
+                                </button>
+                                <div class="dropdown-inner site-nav subjectMenuOption selectedMenuOption">
+                                    <ul class="site-nav-contents site-nav">
+    <li class="supercollection">
+        
+            <a href="/es/subjects/tecnologia/">Tecnología</a>
+            <ul class="level-1">
+                <li>
+                        <a href="/es/informatica-basica/">Informática básica</a>
+                </li>
+                <li>
+                    <a href="/es/crear-un-correo-electronico/">Correo electrónico</a>
+                </li>
+                <li>
+                    <a href="/es/word-2013/">Word 2013</a>
+                </li>
+                <li>
+                    <a href="/es/microsoft-excel-2010/">Excel 2010</a>
+                </li>
+                <li>
+                    <a href="/es/crear-cuenta-en-facebook/">Facebook</a>
+                </li>
+                    <li>
+                    <a href="/es/subjects/tecnologia/">Más cursos...</a>
+                </li>
+            </ul>
+        
+    </li>
+    <li class="supercollection">
+        
+            <a href="/es/subjects/matematicas/">Matemáticas</a>
+            <ul class="level-1">
+                <li>
+                    <a href="/es/los-conjuntos/">Los conjuntos</a>
+                </li>
+                <li>
+                    <a href="/es/fraccionarios/">Fraccionarios</a>
+                </li>
+                <li>
+                    <a href="/es/los-numeros/">Los números</a>
+                </li>
+                <li>
+                    <a href="/es/sumar-y-restar/">Sumar y restar</a>
+                </li>
+                <li>
+                    <a href="/es/divisores-y-multiplos/">Divisores y múltiplos</a>
+                </li>
+                <li>
+                    <a href="/es/algebra/">Álgebra</a>
+                </li>
+                <li>
+                    <a href="/es/subjects/matematicas/">Más cursos...</a>
+                </li>
+            </ul>
+        
+    </li>
+    <li class="supercollection">
+        
+            <a href="/es/subjects/formacion-profesional/">Formación profesional</a>
+            <ul class="level-1">
+                <li>
+                    <a href="/es/credito/">Crédito</a>
+                </li>
+                <li>
+                    <a href="/es/emprendimiento/">Emprendimiento</a>
+                </li>
+                <li>
+                    <a href="/es/mundo-laboral/">Mundo laboral</a>
+                </li>
+                <li>
+                    <a href="/es/acceso-a-la-educacion-superior/">Acceso a la educación superior</a>
+                </li>
+                <li>
+                    <a href="/es/finanzas-personales/">Finanzas personales</a>
+                </li>
+                <li>
+                    <a href="/es/curso-de-fotografia-digital/">Curso de fotografía digital</a>
+                </li>
+                <li>
+                    <a href="/es/subjects/formacion-profesional/">Más cursos...</a>
+                </li>
+            </ul>
+        
+    </li>
+
+    <li class="supercollection">
+        
+            <a href="https://idiomas.gcfglobal.org/es/">Inglés</a>
+            <ul class="level-1">
+                <li><a href="https://idiomas.gcfglobal.org/es/curso/ingles/a1/">Beginner</a></li>
+                <li><a href="https://idiomas.gcfglobal.org/es/curso/ingles/a2/">Basic</a></li>
+                <li><a href="https://idiomas.gcfglobal.org/es/curso/ingles/b1/">Intermediate</a></li>
+                <li><a href="https://idiomas.gcfglobal.org/es/curso/ingles/b2/">Upper intermediate</a></li>
+                <li><a href="https://idiomas.gcfglobal.org/es/curso/ingles/c1/">Advanced</a></li>
+                <li><a href="https://www.juegosparaaprenderingles.org/">Juegos</a></li>
+            </ul>
+        
+    </li>
+
+    
+ </ul>
+                                    <ul class="dropdown-contents level-1 bottom-row">
+                                        <li><a href="/es/topics/">Todos los cursos</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        
+
+						
+							<button name="print-button" onclick="if (!window.__cfRLUnblockHandlers) return false; window.print()" class="print-button header-btn" data-cf-modified-5147dbadf6b3c82475838626-="">
+								<i class="material-icons">print</i>
+							</button>
+						
+
+						<!-- Language selector -->
+						<div class="topnav-language">
+							<div class="language-dropdown">
+								<button onclick="if (!window.__cfRLUnblockHandlers) return false; toggleLanguageMenu()" aria-label="Elige tu idioma" aria-haspopup="true" aria-expanded="false" aria-controls="acc-language-menu" id="acc-language-button" class="language-dropdown-button" data-cf-modified-5147dbadf6b3c82475838626-="">
+									Español
+									<i class="material-icons more" aria-hidden="true">expand_more</i>
+									<i class="material-icons less" aria-hidden="true">expand_less</i>	
+								</button>
+								<ul id="acc-language-menu" class="language-dropdown-menu" aria-labelledby="acc-language-button">
+									<li>
+										<a onclick="if (!window.__cfRLUnblockHandlers) return false; event.preventDefault(); toggleLanguageMenu()" href="/es/" class="home-header-language-option-link" data-cf-modified-5147dbadf6b3c82475838626-="">
+											Español
+											<i class="material-icons more" aria-hidden="true">expand_more</i>
+											<i class="material-icons less" aria-hidden="true">expand_less</i>	
+										</a>
+									</li>
+									<li>
+										<a href="/pt/" class="home-header-language-option-link">
+											Português
+										</a>
+									</li>
+									<li>
+										<a href="/en/" class="home-header-language-option-link">
+											English
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+
+						<!-- Sign actions -->
+						<div class="sign__wrapper" id="header-sign-options">
+							<div class="sign__loading">
+								<div></div>
+								<div></div>
+								<div></div>
+								<div></div>
+							</div>
+						</div>
+						<!-- End -->
+					</div>
+				</div>
+	    	</div>
+
+	    	
+				<div style="display:none;" class="tutorial-banner">
+					<i class="material-icons">info</i>
+					<span>Bienvenido al curso. En este menú verás todas las lecciones que hemos preparado para ti. Para iniciar, solamente, haz clic en la lección que más te interese.</span>
+					<button onclick="if (!window.__cfRLUnblockHandlers) return false; $('.tutorial-banner').remove()" class="wrapper-button close" data-cf-modified-5147dbadf6b3c82475838626-=""><i class="material-icons">close</i></button>
+				</div>
+			
+	    	<!-- <div class="header-divider"></div> -->
+	    	
+		    	<div class="sub-header">
+		    		<div id="corner-gradient-left"></div>
+		    		<div id="corner-gradient-right"></div>
+		    		<div class="headerfooter-content-wrapper">
+		    			<div id="subheaderContentContainer">
+		    			
+		    				<div class="header-nodesc es">
+<!-- 		    					<h1>
+		    						
+			    						<a class="current-tutorial-title" href="/es/estadistica-basica/">Estadística básica</a>&nbsp;-
+		    						
+		    						<span id="current-lesson-title">¿Qué es un gráfico de barras?</span>
+		    					</h1> -->
+		    					<div class="title-content">
+			    					
+				    						<h1><a class="current-tutorial-title lesson-header-tutorial-title-link" href="/es/estadistica-basica/">Estadística básica</a>&nbsp;-</h1>
+				    						<h2><span id="current-lesson-title">¿Qué es un gráfico de barras?</span></h2>
+		    						
+	    						</div>
+
+		    					
+	    							<a class="header-tutorial-link lesson-header-tutorial-link" href="/es/estadistica-basica/">Ir al curso</a>
+	    						
+		    				</div>
+	    				
+	    				<img id="header-img" loading="lazy" class="header-image" src="https://media.gcflearnfree.org/assets/edu-gcfglobal-site/images/city-aqua2.svg" alt="">
+	    				</div>
+		    		</div>
+		    	</div>
+	    	
+	    </div>
+
+	    
+	    	
+			    <div class="print-header">
+			    	<div class="print-header-wrapper">
+						<header>
+						    <div class="desktop-header">
+						    	<h1>
+									<div class="print-first-title">Estadística básica</div>
+									<div class="print-second-title">¿Qué es un gráfico de barras?</div>
+								</h1>
+								<img class="logo" src="https://media.gcflearnfree.org/assets/edu-gcfglobal-site/images/gcfglobal-logo-dark.svg" alt="GCFLearnFree.org" />
+						    </div>
+						</header>
+					</div>
+			    </div>
+		    
+	    
+
+	    <div class="mobile-header">
+	        <div id="page-top">
+	          <a data-route="home" class="home-link" href="/">
+	          	
+					<!-- <img class="homeicon es" src="https://media.gcflearnfree.org/global/logo-es-inverted.svg" alt="GCFAprendeLibre Logo"> -->
+					<img class="homeicon" src="https://media.gcflearnfree.org/global/gcfglobal-color.png" alt="GCFGlobal Logo">
+				
+	          </a>
+			  <a class="envivo-butt-mobile livebutt" target="_blank" href="#"><img src="https://media.gcflearnfree.org/assets/edu-gcfglobal-site/images/aovivo.svg"></a>
+			  <div class="options_menu_mobile">
+				<div>
+					<i onclick="if (!window.__cfRLUnblockHandlers) return false; handleHeaderOption('search')" class="material-icons menu-icon menu-icon-left" data-cf-modified-5147dbadf6b3c82475838626-="">search</i>
+				</div>
+				<div>
+					<img id="avatarImageOnMovile" onclick="if (!window.__cfRLUnblockHandlers) return false; handleHeaderOption('account')" style="margin: 0" src="" class="
+							dropdown__trigger--avatar
+							is-movile
+							hide_element
+							material-icons
+							menu-icon
+							menu-icon-center" data-cf-modified-5147dbadf6b3c82475838626-="">
+					<i id="avatarIconOnMovile" onclick="if (!window.__cfRLUnblockHandlers) return false; handleHeaderOption('account')" class="material-icons menu-icon menu-icon-center" data-cf-modified-5147dbadf6b3c82475838626-="">
+						person_outline
+					</i>
+					<i id="dropdownIconOnMovile" onclick="if (!window.__cfRLUnblockHandlers) return false; handleHeaderOption('account')" class="material-icons menu-icon menu-icon-dropdown" data-cf-modified-5147dbadf6b3c82475838626-="">
+						arrow_drop_down
+					</i>
+				</div>
+				<div>
+					<i onclick="if (!window.__cfRLUnblockHandlers) return false; handleHeaderOption('nav')" class="material-icons menu-icon menu-icon-right" data-cf-modified-5147dbadf6b3c82475838626-="">menu</i>
+				</div>
+			  </div>
+	        </div>
+	        <div id="navcollapse">
+	          <div class="navcollapsecontent">
+	            <a href="/es/topics/">Todos los cursos</a>
+	            
+	            <a href="/es/info/quienes-somos/1/">¿Quiénes somos?</a>
+	            <a href="/es/info/preguntas-frecuentes/1/">Preguntas frecuentes</a>
+	            <a href="/es/info/contactanos/1/">Contáctanos</a>
+
+	            <div class="language-picker">
+		            <a href="/en/">EN</a>
+		            <a href="/es/">ES</a>
+		            <a href="/pt/">PT</a>
+	        	</div>
+	          </div>
+	        </div>
+			<div id="accountNavcollapse">
+				<div class="accountNavcollapsecontent">
+				  <!-- Not logged in -->
+				  <div class="sign__actions is-mobile">
+						
+					<!-- Sign in -->
+					<a id="movileSignin" href="https://account.gcfglobal.org/" class="sign__action">Ingresar</a>
+
+					<!-- Sign up -->
+					<a id="movileSignup" href="https://account.gcfglobal.org/signup" class="sign__action is-primary">¡Crear cuenta!</a>
+
+					<!-- Dashboard -->
+					<a id="movileDashboard" href="https://account.gcfglobal.org/home" class="sign__action hide_element">Panel de usuario</a>
+					
+					<!-- profile -->
+					<a id="movileProfile" href="https://account.gcfglobal.org/profile" class="sign__action hide_element">Perfil</a>
+
+					<!-- logout -->
+					<a id="movileLogout" href="https://account.gcfglobal.org/auth/logout" class="sign__action hide_element">Cerrar sesión</a>
+				  </div>
+				  <!-- End -->
+				</div>
+			  </div>
+	      
+	        <div class="search-control">
+	            <div class="search-container search-container-collapsed">
+					<div class="search-inner-container">
+						
+							<a class="mobile-back-to-tutorial" href="/es/estadistica-basica/">
+								<span class="no-break"><i class="material-icons">navigate_before</i> Curso</span>
+							</a>
+						
+						<form id="gcfsearch" method="get" action="/es/search/" onSubmit="if (!window.__cfRLUnblockHandlers) return false; showSearchSpinner()" data-cf-modified-5147dbadf6b3c82475838626-="">
+							<button type="submit" aria-label="search button"><i class="material-icons">search</i></button>
+							<div class="mobile-search-input-wrapper">	
+								<input id="request" class="searchinput" pattern=".{1,}" required type="text" name="q" name="q" size="21" maxlength="120" placeholder="¿Qué quieres aprender?" autocomplete="off" title="Search bar">
+							</div>
+						</form>
+					</div>
+	            </div>
+	        </div>
+	    </div>
+	</header>
+</div>
+<script defer src="../../scripts/global/header/account-methods.js" type="5147dbadf6b3c82475838626-text/javascript"></script>
+  <div id="background">
+    <div class="mobile-lesson-title">
+      <h1>Estadística básica: ¿Qué es un gráfico de barras?</h1>
+    </div>
+    <div id="page-wrapper">
+      <div id="content-area">
+        <span style="display:none;" id="playlist-id">61d5b8b1c4da77185ca9f221</span>
+        <span style="display:none;" id="lesson-id">61d5c1f6c4da77185ca9f226</span>
+        <div>
+          <div class="text-plus-page content-item">
+            <div id="lessoncontent">
+              
+              <div id="/es/estadistica-basica/que-es-un-grafico-de-barras/1/" class="lesson-block lesson imgBoxShadow" data-title="¿Qué es un gráfico de barras?">
+              
+                <div id="first-divider" class="divider-box">
+                  <div class="infinite-scroll-divider"></div>
+                  <h4 tabindex="0" aria-label="Lesson Divider Página 5: ¿Qué es un gráfico de barras?">Página 5: ¿Qué es un gráfico de barras?</h4>
+                </div>
+                
+                  <p class="scroll-trigger-top">/es/estadistica-basica/que-es-una-tabla-de-frecuencias/content/</p>
+                
+                <h3>¿Qué es un gráfico de barras?</h3>
+<p>Un <strong>diagrama de barras</strong> es un gráfico usado para mostrar de forma resumida&nbsp;<span style="font-size: 1em;">un grupo de datos que puede incluir&nbsp;<a href="https://edu.gcfglobal.org/es/estadistica-basica/variables-estadisticas/1/">variables cualitativas y cuantitativas</a>.&nbsp;&nbsp;</span></p>
+<p class="moreInfo">En este video te enseñamos como construir este tipo de diagramas:</p>
+<div class="video-embed"><iframe style="width: 853px; height: 480px;" src="https://www.youtube.com/embed/Uj2C9Hu0or4?rel=0&showinfo=0" frameborder="0" allowfullscreen=""></iframe></div>
+<h4>Características de un diagrama de barras</h4>
+<ul><li>Se compone de&nbsp;columnas o barras&nbsp;de diferentes alturas, estas pueden ser horizontales o verticales.</li><li>Tiene un<strong> eje horizontal </strong>o <strong>eje x</strong>, donde se ubica una variable, por lo general, cualitativa.</li><li>Tiene un eje vertical o eje y, donde se ponen los valores que determinan la altura de las barras. A estos números se les conoce como <a href="https://edu.gcfglobal.org/es/estadistica-basica/que-es-una-tabla-de-frecuencias/1/" target="_blank">frecuencia</a><strong></strong>.&nbsp;</li><li>El ancho de las barras y el espacio entre cada una&nbsp;debe ser el mismo.</li><li>Las barras también sirven para comparar valores.</li></ul>
+<h4>¿Cómo se construye un gráfico de barras?</h4>
+<p>Para la fiesta de cumpleaños de Daniel su mamá decidió comprar varios sabores de helado. Solo tiene&nbsp;dinero para tres, así que le preguntará a cada invitado cuál es su sabor favorito entre:</p>
+<ul><li><span style="font-size: 19.04px;">&nbsp;Chocolate</span></li><li>Vainilla</li><li>Fresa</li><li>Brownie&nbsp;</li><li>Chicle</li></ul>
+<h4>Paso 1:</h4>
+<p>Con las respuestas de los 50 invitados, organiza los siguientes datos en una tabla: 18 personas votaron por el helado de chocolate, 10 por vainilla, 12 por brownie, 8 por fresa y 2 por chicle.</p>
+<p>Recuerda que a las veces que se repite un dato se le llama <a href="https://edu.gcfglobal.org/es/estadistica-basica/que-es-una-tabla-de-frecuencias/1/" target="_blank">Frecuencia</a>.</p>
+<div><img loading="lazy" src="https://media.gcflearnfree.org/content/61d5c1f6c4da77185ca9f226_01_05_2022/Cómo-construir-un-diagrama-de-barras.png" style="width: 331px; height: 322.469px;" alt="Cómo construir un diagrama de barras" title="Cómo construir un diagrama de barras" width="331" height="322.46900000000005"></div>
+<h4>Paso 2:</h4>
+<p>Ubica en el<strong> eje x</strong> cada uno de los sabores.</p>
+<h4>Paso 3:</h4>
+<p><span style="font-size: 1em;">En el <strong>eje y</strong> coloca&nbsp;la cantidad de personas que votaron por cada sabor. Como el número mayor es el 18, puedes usar una frecuencia de números de dos en dos. Así: dos, cuatro, seis, ocho, diez, doce, catorce, dieciséis y diez y ocho.&nbsp;</span></p>
+<div><img loading="lazy" src="https://media.gcflearnfree.org/content/61d5c1f6c4da77185ca9f226_01_05_2022/Pasos-para-crear-un-diagrama-de-barras.png" alt="Pasos para crear un diagrama de barras" title="Pasos para crear un diagrama de barras"></div>
+<p class="moreInfo">La clave para elegir los números del eje y está en identificar el número más grande. Si tuvieras cifras de 200 o 355 invitados, colocar los números de dos en dos haría que la gráfica quede muy alta. En estos casos, busca una frecuencia que se acomode a lo que quieres mostrar, puede que usar números de de 50 en 50, te funcione mucho mejor.</p>
+<h4>Paso 4:</h4>
+<p>Ubica las barra en dirección a donde hayas ubicado cada sabor. Su tamaño depende del número de personas que votaron. Por ejemplo, la barra de chocolate llega hasta el número 18; la de vainilla, hasta diez;<span style="font-size: 1em;">&nbsp;y así sucesivamente hasta utilizar todos los datos de la tabla.&nbsp;</span></p>
+<div><img loading="lazy" src="https://media.gcflearnfree.org/content/61d5c1f6c4da77185ca9f226_01_05_2022/Así-se-crea-un-diagrama-de-barras.png" alt="Así se crea un diagrama de barras" title="Así se crea un diagrama de barras"></div>
+<h4>Paso 5:</h4>
+<p>¡Eso es todo! C<span style="font-size: 1em;">on este diagrama la mamá de Daniel puede explicarle a su hijo porque los sabores de helado comprarán son: vainilla, chocolate y brownie. Después de todo, ¡son los que le gustan a la mayoría!</span></p>
+<p></p>
+<div><img loading="lazy" src="https://media.gcflearnfree.org/content/61d5c1f6c4da77185ca9f226_01_05_2022/Diagrama-de-barras-1.png" alt="Diagrama de barras" title="Diagrama de barras"></div>
+<p class="chevron"> Si quieres aprender a construir otro tipo de gráficos como el <a href="https://edu.gcfglobal.org/es/estadistica-basica/grafico-de-torta-o-diagrama-circular/1/" target="_blank">diagrama circular</a>&nbsp;o <a href="https://edu.gcfglobal.org/es/estadistica-basica/grafico-lineal/1/" target="_blank">lineal</a>, ¡no te pierdas las siguientes páginas!</p>
+
+                <div class="infinite-nav ">
+                  <!-- <a class="linkblue-button returnLink" href="/es/estadistica-basica/"><span>Volver al curso</span></a> -->
+                  
+                    <a role="button" tabindex="0" aria-label="Next Lesson" onMouseEnter="if (!window.__cfRLUnblockHandlers) return false; $(this).find('img').attr('src', 'https://media.gcflearnfree.org/assets/edu-gcfglobal-site/images/outline-arrow_downward-hover.svg')" onMouseLeave="if (!window.__cfRLUnblockHandlers) return false; $(this).find('img').attr('src', 'https://media.gcflearnfree.org/assets/edu-gcfglobal-site/images/outline-arrow_downward.svg')" class="linkblue-button nextLoadMore" onclick="if (!window.__cfRLUnblockHandlers) return false; infiniteScroll.getNextLesson('61d5b8b1c4da77185ca9f221', '61d5c213c4da77185ca9f227')" onkeydown="if (!window.__cfRLUnblockHandlers) return false; infiniteScroll.keyNextLesson(event, '61d5b8b1c4da77185ca9f221', '61d5c213c4da77185ca9f227')" data-cf-modified-5147dbadf6b3c82475838626-="">
+                      <!-- <span>Cargar:</span>&nbsp;<span>Gráfico de torta o diagrama circular</span> -->
+                      <img class="continue-arrow" src="https://media.gcflearnfree.org/assets/edu-gcfglobal-site/images/outline-arrow_downward.svg" alt=""/><span>Continuar</span>
+                    </a>
+                  
+                  
+                </div>
+
+                <div class="fullpage-nav">
+                  <div class="full-page-divider"></div>
+                  <div class="previous">
+                    <div class="arrow-box">
+                      <img id="prev" src="https://media.gcflearnfree.org/assets/icons/textplus/bottom-nav-left-arrows.png" alt="previous">
+                    </div>
+                    <a href="/es/estadistica-basica/que-es-una-tabla-de-frecuencias/1/">Previous: ¿Qué es una tabla de frecuencias?</a>
+                  </div>
+                  <div class="next">
+                    <a href="/es/estadistica-basica/grafico-de-torta-o-diagrama-circular/1/">
+                      <span>Cargar:</span><span>Gráfico de torta o diagrama circular</span>
+                    </a>
+                    <div class="arrow-box">
+                      <img id="next" src="https://media.gcflearnfree.org/assets/icons/textplus/bottom-nav-right-arrows.png" alt="next">
+                    </div>
+                  </div>
+                </div>
+
+                
+                  <p class="scroll-trigger">/es/estadistica-basica/grafico-de-torta-o-diagrama-circular/content/</p>
+                
+              </div>
+            </div> <!--Close: lessoncontent-->
+          </div>
+        </div>
+        <div class="push"></div>
+      </div>
+      <!-- <div id="edlActivityModal" class="overlay-content overlay-body modal"></div> -->
+      
+    </div>
+  </div>
+  <footer class="footer">
+
+    
+
+    <div class="desktopfooter">
+      <div class="main-footer">
+        <div class="footer-drag-handle" onclick="if (!window.__cfRLUnblockHandlers) return false; toggleFooter()" data-cf-modified-5147dbadf6b3c82475838626-="">
+          <i class="up-arrow material-icons">keyboard_arrow_up</i>
+          <i class="down-arrow material-icons">keyboard_arrow_down</i>
+        </div>
+        <!-- <div class="footer-section-headers"></div> -->
+        <div id="footerContent">
+          <div>
+            <div class="footer-links-container">
+              <div id="sectionOne" class="text-links">
+                <h4 class="footerheaders">Acerca De Nosotros</h4>
+                <a class="home-footer-link about-us-section" href="/es/info/quienes-somos/1/">¿Quiénes somos?</a><br/>
+                <a class="home-footer-link about-us-section" href="/es/info/equipo-de-trabajo/1/">Equipo de trabajo</a><br/>
+                
+                
+                  <a class="home-footer-link about-us-section" href="https://careers.gcfglobal.org/" target="_blank">Trabaja con nosotros</a><br/>
+                
+                
+                <a class="home-footer-link about-us-section" href="https://partners.gcfglobal.org/es">Asóciate con nosotros</a><br/>
+              </div>
+              <div id="sectionTwo" class="text-links">
+                <h4 class="footerheaders">Recursos Educativos</h4>
+                <a class="home-footer-link educators-section" href="https://aprender.gcfglobal.org/es-material-docente">Espacio docente</a><br/>
+                
+              </div>
+              <div id="sectionThree" class="text-links">
+                <h4 class="footerheaders">Ayuda y Soporte</h4>
+                
+                <a class="home-footer-link help-section" href="/es/info/preguntas-frecuentes/1/">Preguntas frecuentes</a><br/>
+                
+                <a class="home-footer-link help-section" href="/es/info/condiciones-de-servicio/1/">Condiciones de Servicio</a><br/>
+                <a class="home-footer-link help-section" href="/es/info/politica-de-privacidad/1/">Política de Privacidad</a><br/>
+                <a class="home-footer-link help-section" href="/es/info/politica-de-cookies/1/">Política de Cookies</a><br/>
+                <a class="home-footer-link help-section" href="/es/info/contactanos/1/">Contáctanos</a>
+                
+              </div>
+            </div>
+            <div class="footer-logo-box">
+              <div id="footer_social_media">
+                
+                  <a class="home-footer-link social-media-section" href="https://www.facebook.com/GCFAprendeLibre" target="_blank">
+                    <img id="fb_link" class="footer_social_media_link" src="https://media.gcflearnfree.org/assets/edu-gcfglobal-site/images/social/facebook_icon.svg" alt="facebook"/>
+                  </a>
+                  <a class="home-footer-link social-media-section" href="https://twitter.com/GCFAprendeLibre" target="_blank">
+                    <img id="twitter_link" class="footer_social_media_link" src="https://media.gcflearnfree.org/assets/edu-gcfglobal-site/images/social/twitter_icon.svg" alt="twitter"/>
+                  </a>
+                  <a class="home-footer-link social-media-section" href="https://www.youtube.com/GCFAprendeLibre" target="_blank">
+                    <img id="youtube_link" class="footer_social_media_link" src="https://media.gcflearnfree.org/assets/edu-gcfglobal-site/images/social/youtube_icon.svg" alt="youtube"/>
+                  </a>
+                  <a class="home-footer-link social-media-section" href="https://pinterest.com/GCFAprendeLibre/" target="_blank">
+                    <img id="pinterest" class="footer_social_media_link" src="https://media.gcflearnfree.org/assets/edu-gcfglobal-site/images/social/pinterest_icon.svg" alt="pinterest"/>
+                  </a>
+                  <a class="home-footer-link social-media-section" href="https://instagram.com/gcfaprendelibre/" target="_blank">
+                    <img id="instagram_link" class="footer_social_media_link" src="https://media.gcflearnfree.org/assets/edu-gcfglobal-site/images/social/instagram_icon.svg" alt="instagram"/>
+                  </a>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="copyright-wrapper">
+         <p id="copyright">
+          
+        </p>
+      </div>
+    </div>
+    <!-- <div class="mobilefooter">
+      <div class="footer-drag-handle" onclick="toggleMobileFooter()">
+        <i class="up-arrow material-icons">keyboard_arrow_up</i>
+        <i class="down-arrow material-icons">keyboard_arrow_down</i>
+      </div>
+      <div class="mobileFooterContent">
+        <a href="https://gcfglobal.org/"><img class="globalicon" alt="GCFGlobal.org" src="https://media.gcflearnfree.org/global/gcfglobal-color.png"></img></a>
+        <p id="copyrightMobile">
+          
+        </p>
+      </div>
+    </div> -->
+  </footer>
+<script defer src="../../scripts/global/oidc-client.slim.min.js" type="5147dbadf6b3c82475838626-text/javascript"></script>
+<script defer src="../../scripts/global/auth-oidc.js" type="5147dbadf6b3c82475838626-text/javascript"></script>
+  
+    <iframe id="support-iframe" class="support-iframe" src="" style="border: none; position: fixed;bottom: 0;right: 0;height: 102px;width: 102px;"></iframe>
+  
+  <script defer src="/scripts/deployment-global/defer-lessonPage.concat.js" type="5147dbadf6b3c82475838626-text/javascript"></script>
+  <script defer type="5147dbadf6b3c82475838626-text/javascript">
+    window.addEventListener('load', function() {
+        
+        jQuery('a.header-tutorial-link').click(function() {
+          gtag('event', 'conversion', {'send_to': 'AW-1060708011/U9qUCI2JURCrveT5Aw'});
+        });
+        jQuery('a.nextLoadMore').click(function() {
+          gtag('event', 'conversion', {'send_to': 'AW-1060708011/JhjyCOmUbxCrveT5Aw'});
+        });
+        
+    });
+  </script>
+<script src="/cdn-cgi/scripts/7d0fa10a/cloudflare-static/rocket-loader.min.js" data-cf-settings="5147dbadf6b3c82475838626-|49" defer=""></script></body>
+</html>
